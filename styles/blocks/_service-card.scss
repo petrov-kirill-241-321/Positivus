@@ -12,7 +12,13 @@
   @include mobile {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 27px;
+    row-gap: 20px;
+    width: 100%;
+  }
+
+  @include mobile-s {
+    padding: 30px;
+    column-gap: 0;
   }
 
   &--accent-bg {
@@ -38,7 +44,7 @@
     }
 
     @include mobile {
-      min-width: 165px;
+      min-width: 150px;
     }
   }
 

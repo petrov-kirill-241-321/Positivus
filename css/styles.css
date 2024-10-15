@@ -704,7 +704,15 @@ h4 {
   .service-card {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 27px;
+    row-gap: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .service-card {
+    padding: 30px;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
 }
 .service-card--accent-bg {
@@ -729,7 +737,7 @@ h4 {
 }
 @media (max-width: 767px) {
   .service-card__image {
-    min-width: 165px;
+    min-width: 150px;
   }
 }
 .service-card__title {
